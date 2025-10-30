@@ -5,7 +5,11 @@
 }
 
 body{
-    background: #f5f6fa;
+    background: #d6defc;
+}
+
+main{
+    display: inline-block;
 }
 
 a{
@@ -18,13 +22,22 @@ nav{
     
 }
 
+li{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+
+}
+
 
 
 
 /* Contenedor de card pequenia*/
 .cards-superiores{
     display: flex;
-    margin: 10px;
+    position: absolute;
+    margin-left: 300px;
 }
 .card-chica{
     margin: 10px;
@@ -58,27 +71,46 @@ nav{
     
 }
 
+/* perfil*/
+
+.perfil{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.perfil svg{
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+}
+
+.perfil-nombre{
+    color: white;
+}
+
+.perfil-email{
+    color: white;
+}
 
 /* menu lateral*/
-.menu-lateral{
-    display: flex;
-    
-    position: absolute;
-}
+
 .barra-lateral{
     background-color: #3d5752;
     width: 250px;
-    height: 900px;
+    height: 90vh;
     margin: 20px;
     border-radius: 15px;
+    
 }
 
 .barra-lateral2{
     background-color: #425C5B;
-    height: 600px;
-    margin-top: 300px;
+    height: 500px;
+    margin-top: 40px;
     border-radius: 0px 0px 15px 15px;
     border: 1px solid white;
+    
 }
 
 /* boton menu lateral*/
@@ -86,16 +118,42 @@ nav{
 .btn{
     text-align: center;
     align-items: center;
+    
 }
 
 .btn-lateral{
     color: white;
     display: block;
     position:relative;
+
+    
     
 }
 
-.btn-lateral a{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.btn-lateral li{
+    font-family:'Courier New', Courier, monospace;
+    margin: 20px 75px 20px;
+    text-align: left;
+    font-size: 16px;
+    
+
+}
+
+.active-users{
+    text-align: left;
+}
+
+.active-users h2{
+    color: rgb(135, 120, 77);
+    font-size: 15px;
+    margin: 20px;
+}
+
+.contenedor1{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 400px;
 
 }
